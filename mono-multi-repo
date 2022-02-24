@@ -1,0 +1,34 @@
+Mono repo: all services, libraries, frontend, backend, IAC in a singe repository
+
+
+Pros:
+Less management overhead with more services involved
+Easy for developer to start contributing the code
+Changes across different services can be captured in one Pull Request
+
+Cons:
+Need to manage code conflicts arise from different teams
+Additional release managaement required while mixing IAC and services
+
+Multi-repo: 
+
+Services, libraries, frontend, backend, IAC in a separate repository
+Pros:
+Easy to separate areas of responsibility
+Each service can be released released separately and versioned separately
+Less conflict between different team
+
+Cons:
+Less management overhead with more services involved
+Changes across different service is hard to manage, and may miss some of the changes while releasing 
+
+Hybrid repo:
+Strategically seperate the repositories based on areas of responsibility, for example, Services, libraries, frontend, backend can be in one repository that is managed by dev team while IAC can be in it own repository that is managed by devops team
+
+Pros:
+Easy to separate areas of responsibility
+
+Cons:
+Dependencies between dev and devops team
+
+
